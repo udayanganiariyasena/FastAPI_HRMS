@@ -10,7 +10,7 @@ class Question(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "AIHRMS for HORIZON CAMPUS new"}
+    return {"message": "AIHRMS for HORIZON CAMPUS.."}
 
 @app.post("/")
 async def ask_hr(question: Question):
