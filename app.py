@@ -19,7 +19,7 @@ class Question(BaseModel):
 # Predefined Q&A pairs
 qa_pairs = {
     "hello": "Hello! How can I assist you with HRMS today?",
-    "leave": "You can apply for leave through the Leave Management system.",
+    "leave": "You can apply for leave through the Leave Management system.This is update on railway.",
     "attendance": "Attendance can be marked through our biometric system or mobile app.",
     "salary": "Salary details are available in the Payroll section.",
     "benefits": "Employee benefits include health insurance, paid leave, and retirement plans.",
