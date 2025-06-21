@@ -1,14 +1,26 @@
-faiss-cpu==1.8.0 --find-links https://download.pytorch.org/whl/cpu
+# Core
 fastapi==0.109.0
 uvicorn==0.25.0
 python-dotenv==1.0.0
-langchain==0.1.0
-langchain-community==0.0.28
-langchain-core==0.1.23
-langchain-openai==0.0.2
-sentence-transformers==2.2.2
-pypdf==3.17.4
-pydantic==1.10.13
-torch==2.2.2 
-transformers==4.40.2  
 
+# LangChain (compatible versions)
+langchain==0.0.348  # Downgraded for stability
+langchain-community==0.0.28
+langchain-core==0.1.31  # Matching version
+langchain-openai==0.0.8
+
+# FAISS with pre-built wheel
+faiss-cpu==1.7.4 --find-links https://download.pytorch.org/whl/cpu
+
+# Embeddings
+sentence-transformers==2.2.2
+
+# Document Processing
+pypdf==3.17.4
+
+# PyTorch (compatible version)
+torch==2.2.2
+transformers==4.40.2
+
+# Pydantic (v1 for compatibility)
+pydantic==1.10.13
