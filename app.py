@@ -1,7 +1,7 @@
 # main.py
 from fastapi import FastAPI
 from pydantic import BaseModel
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
